@@ -20,7 +20,7 @@ const Timeline = (props) => {
         >
           {textDate}
         </p>
-        <h1 className="text-primary">{textHeader}</h1>
+        <h1 className="text-white">{textHeader}</h1>
         <p className="text-left text-[8px] lg:text-[14px] text-secondary">
           {textContent}
         </p>
