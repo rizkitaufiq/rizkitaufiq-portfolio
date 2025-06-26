@@ -76,7 +76,7 @@ const Hero = (props) => {
                 </div>
 
                 <div className="flex mt-2 lg:mt-5 gap-1 lg:gap-2">
-                  <a href="https://drive.google.com/file/d/1lefP4axZlunAKk4gMO-P171l0BK-ZA8y/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1uIHnwEN5oJwalD0OQq59t_S9ywcm2bcs/view?usp=sharing">
                     <ButtonSM
                       bgColor="bg-secondary"
                       hoverBgColor="hover:bg-default"
