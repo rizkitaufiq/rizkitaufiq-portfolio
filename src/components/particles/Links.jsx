@@ -14,89 +14,72 @@ const Links = () => {
   }, []);
 
   return (
-    <div>
+    <div className="fixed inset-0 pointer-events-none z-0">
       <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fullScreen: { enable: false }, // Menonaktifkan layar penuh
-          style: {
-            position: "fixed",
-            top: "0",
-            right: "0",
-            width: "50vw",
-            height: "80vh",
-            zIndex: 0,
-          },
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: 120,
+          fullScreen: { enable: false },
+          fpsLimit: 60,
           interactivity: {
             events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
               },
               resize: true,
             },
             modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
+              grab: {
+                distance: 140,
+                links: {
+                  opacity: 0.4,
+                },
               },
             },
           },
           particles: {
             color: {
-              value: "#212121",
+              value: ["#38BDF8", "#818CF8", "#34D399"],
             },
             links: {
-              color: "#212121",
-              distance: 150,
+              color: "#38BDF8",
+              distance: 140,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.15,
               width: 1,
             },
             move: {
               direction: "none",
               enable: true,
               outModes: {
-                default: "bounce",
+                default: "out",
               },
               random: false,
-              speed: 6,
+              speed: 1.2,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 900,
               },
-              value: 80,
+              value: 40,
             },
             opacity: {
-              value: 0.5,
+              value: { min: 0.15, max: 0.4 },
             },
             shape: {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 3 },
             },
           },
           detectRetina: true,
         }}
+        className="w-full h-full"
       />
     </div>
   );

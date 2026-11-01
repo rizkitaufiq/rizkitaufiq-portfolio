@@ -5,7 +5,7 @@ const ButtonIcon = (props) => {
     props;
   return (
     <button
-      className={`${borderColor} ${hoverBgColor} ${hoverTextColor} ${textColor} flex justify-center items-center p-2 lg:p-4 w-[25px] h-[2px] lg:w-[40px] lg:h-[40px] border-2 rounded-full shadow-[0_0_25px_5px_rgba(0,0,0,0.2)] hover:shadow-[0_0_25px_5px_rgba(0,0,0,0.8)] transition-all duration-300`}
+      className={`${borderColor} ${hoverBgColor} ${hoverTextColor} ${textColor} flex justify-center items-center p-2 lg:p-4 w-[28px] h-[28px] lg:w-[40px] lg:h-[40px] border-2 rounded-full shadow-sm hover:shadow-md transition-all duration-300`}
     >
       {children}
     </button>

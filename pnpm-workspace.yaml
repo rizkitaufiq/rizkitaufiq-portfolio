@@ -1,0 +1,5 @@
+allowBuilds:
+  '@tsparticles/engine': true
+  esbuild: true
+  react-particles: true
+  tsparticles-engine: true
